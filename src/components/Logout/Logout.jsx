@@ -8,7 +8,7 @@ export default function Logout({onLogout}){
     localStorage.removeItem("token")
     onLogout();
 
-    navigate('/posts')
+    navigate('/')
 
     window.location.reload()
 }
