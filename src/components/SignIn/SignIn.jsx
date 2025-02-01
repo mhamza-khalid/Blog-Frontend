@@ -75,7 +75,7 @@ export default function SignIn({ onLogin }) {
 
         async function validateUser() {
             try {
-                const response = await fetch('http://localhost:3000/login', {
+                const response = await fetch('https://blog-backend-production-6422.up.railway.app/login', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
