@@ -62,7 +62,7 @@ export default function SignUp(props) {
     };
 
     try{
-        let response = await fetch(`http://localhost:3000/users`)
+        let response = await fetch(`https://blog-backend-production-6422.up.railway.app/users`)
         if(!response.ok){
             let message = await response.json()
             throw new Error(message.error)
@@ -85,7 +85,7 @@ export default function SignUp(props) {
     //now send user details to server to upload
 
     try{
-        let response = await fetch('http://localhost:3000/users', {
+        let response = await fetch('https://blog-backend-production-6422.up.railway.app/users', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
