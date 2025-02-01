@@ -50,7 +50,7 @@ export default function PostsTable({ posts, username, render, setRender }) {
     };
 
     const handlePublishToggle = async (post) => {
-        const url = `http://localhost:3000/posts/${post.post_id}/${post.isPublished ? 'unpublish' : 'publish'}`;
+        const url = `https://blog-backend-production-6422.up.railway.app/posts/${post.post_id}/${post.isPublished ? 'unpublish' : 'publish'}`;
         
         try {
             const response = await fetch(url, { method: 'PUT' });
@@ -71,7 +71,7 @@ export default function PostsTable({ posts, username, render, setRender }) {
         if (!postToDelete) return;
 
         try {
-            const response = await fetch(`http://localhost:3000/posts/${postToDelete}`, { method: 'DELETE' });
+            const response = await fetch(`https://blog-backend-production-6422.up.railway.app/posts/${postToDelete}`, { method: 'DELETE' });
 
             if (response.status === 200) {
                 setRender(!render);
@@ -90,7 +90,7 @@ export default function PostsTable({ posts, username, render, setRender }) {
     const handleEdit = (postID) =>{
         //now we have to go to the editor website and send in the url the token
         let token = localStorage.getItem("token");
-        window.open(`http://localhost:5174?token=${encodeURIComponent(token)}&update=${true}&postId=${postID}`,"_blank");
+        window.open(`https://odin-blog-editor.netlify.app?token=${encodeURIComponent(token)}&update=${true}&postId=${postID}`,"_blank");
     }
 
     return (
