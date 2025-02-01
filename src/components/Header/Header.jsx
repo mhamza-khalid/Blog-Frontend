@@ -112,8 +112,8 @@ export default function Header({ isSignedIn, user, toggleTheme, themeMode }) {
                                         <MenuItem onClick={handleCloseNavMenu}>
                                             <Typography sx={{ textAlign: 'center' }}>
                                             {themeMode == 'light' ?
-                                                <a href={`http://localhost:5174?token=${encodeURIComponent(token)}`} target='_blank' style={{ color: 'black' }}>New Post</a> :
-                                                <a href={`http://localhost:5174?token=${encodeURIComponent(token)}`} target='_blank'>New Post</a>}
+                                                <a href={`https://odin-blog-editor.netlify.app/?token=${encodeURIComponent(token)}`} target='_blank' style={{ color: 'black' }}>New Post</a> :
+                                                <a href={`https://odin-blog-editor.netlify.app/?token=${encodeURIComponent(token)}`} target='_blank'>New Post</a>}
                                             </Typography>
                                         </MenuItem>
                                         <IconButton onClick={toggleTheme} color="inherit" sx={{ ml: 2 }}>
@@ -180,7 +180,7 @@ export default function Header({ isSignedIn, user, toggleTheme, themeMode }) {
                                         onClick={handleCloseNavMenu}
                                         sx={{ my: 2, color: 'white', display: 'block' }}
                                     >
-                                        <a href={`http://localhost:5174?token=${encodeURIComponent(token)}`} target="_blank">New Post</a>
+                                        <a href={`https://odin-blog-editor.netlify.app/?token=${encodeURIComponent(token)}`} target="_blank">New Post</a>
                                     </Button>
                                     <IconButton onClick={toggleTheme} color="inherit" sx={{ ml: 2 }}>
                                         {themeMode === "light" ? <Brightness4Icon /> : <Brightness7Icon />}
