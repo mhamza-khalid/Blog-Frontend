@@ -145,3 +145,11 @@ body.dark-mode .css-gmh7jj-MuiTableBody-root{
 body.dark-mode .css-1j3gxal-MuiTableCell-root.MuiTableCell-body{
     color: white;
 }
+
+body.dark-mode .css-1y13rjj{
+    background-color: #3b3838;
+}
+
+body .css-1u679kl a{
+    color: white
+}
