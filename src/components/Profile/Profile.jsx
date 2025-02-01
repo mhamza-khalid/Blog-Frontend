@@ -28,7 +28,7 @@ export default function UserCard() {
         async function getPosts() {
             let data = await validateToken()
             try {
-                const response = await fetch(`http://localhost:3000/users/${data.id}`)
+                const response = await fetch(`https://blog-backend-production-6422.up.railway.app/users/${data.id}`)
                 let user = await response.json()
                 console.log(user)
                 setUser(user)
@@ -37,7 +37,7 @@ export default function UserCard() {
                 console.error('Error:', error);
             }
             try {
-                const response = await fetch(`http://localhost:3000/posts/user/${data.id}`)
+                const response = await fetch(`https://blog-backend-production-6422.up.railway.app/posts/user/${data.id}`)
                 let userPosts = await response.json()
                 console.log(userPosts)
                 setPosts(userPosts.posts)
@@ -46,7 +46,7 @@ export default function UserCard() {
                 console.error('Error:', error);
             }
             try {
-                const response = await fetch(`http://localhost:3000/posts`)
+                const response = await fetch(`https://blog-backend-production-6422.up.railway.app/posts`)
                 let _allPosts = await response.json()
                 console.log('All posts', _allPosts)
 
@@ -61,7 +61,7 @@ export default function UserCard() {
         async function getUserLikedPosts() {
             let data = await validateToken()
             try {
-                const response = await fetch(`http://localhost:3000/users/${data.id}/liked`);
+                const response = await fetch(`https://blog-backend-production-6422.up.railway.app/users/${data.id}/liked`);
                 let _likedPosts = await response.json();
                 console.log('Posts I have liked', _likedPosts)
                 _likedPosts = _likedPosts.user_liked_posts
