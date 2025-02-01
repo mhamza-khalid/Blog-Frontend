@@ -12,7 +12,7 @@ const Body = () => {
   useEffect(() => {
     async function getAllPosts() {
       try {
-        const response = await fetch('http://localhost:3000/posts');
+        const response = await fetch('https://blog-backend-production-6422.up.railway.app/posts');
         const posts = await response.json();
         const publishedPosts = posts.filter(post => post.isPublished);
         if (response.status === 500) {
