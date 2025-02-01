@@ -35,7 +35,7 @@ export default function Index() {
       const token = localStorage.getItem("token");
       async function checkSignedIn(token) {
         try {
-          const response = await fetch("http://localhost:3000/login/check", {
+          const response = await fetch("https://blog-backend-production-6422.up.railway.app/login/check", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
