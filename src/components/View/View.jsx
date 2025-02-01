@@ -52,8 +52,8 @@ export default function View({ isSignedIn }) {
             try {
                 const [userData, postResponse, commentsResponse] = await Promise.all([
                     validateToken('false'),
-                    fetch(`http://localhost:3000/posts/${id}`),
-                    fetch(`http://localhost:3000/posts/${id}/comments`)
+                    fetch(`https://blog-backend-production-6422.up.railway.app/posts/${id}`),
+                    fetch(`https://blog-backend-production-6422.up.railway.app/posts/${id}/comments`)
                 ]);
 
                 if (!postResponse.ok) throw new Error("Failed to fetch post");
