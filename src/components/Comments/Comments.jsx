@@ -46,7 +46,7 @@ export default function Comments({ comments, postId, rerender, setRerender }) {
         }
     
         try {
-            let response = await fetch(`http://localhost:3000/posts/${updateComment.postId}/comments/${updateComment.comment_id}`, {
+            let response = await fetch(`https://blog-backend-production-6422.up.railway.app/posts/${updateComment.postId}/comments/${updateComment.comment_id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -73,7 +73,7 @@ export default function Comments({ comments, postId, rerender, setRerender }) {
 
     const handleCommentDelete = async (commentId, postId) => {
         try {
-            let response = await fetch(`http://localhost:3000/posts/${postId}/comments/${commentId}`, {
+            let response = await fetch(`https://blog-backend-production-6422.up.railway.app/posts/${postId}/comments/${commentId}`, {
                 method: 'DELETE'
             })
             if (response.status != 200) {
@@ -117,7 +117,7 @@ export default function Comments({ comments, postId, rerender, setRerender }) {
                 };
                 try {
                     console.log(postId)
-                    const response = await fetch(`http://localhost:3000/posts/${postId}/comments`, {
+                    const response = await fetch(`https://blog-backend-production-6422.up.railway.app/posts/${postId}/comments`, {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
