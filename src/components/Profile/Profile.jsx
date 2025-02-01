@@ -1,4 +1,6 @@
 import AspectRatio from '@mui/joy/AspectRatio';
+import CircularProgress from '@mui/material/CircularProgress';
+import Boxx from '@mui/material/Box';
 import Box from '@mui/joy/Box';
 import Card from '@mui/joy/Card';
 import CardContent from '@mui/joy/CardContent';
@@ -82,7 +84,13 @@ export default function UserCard() {
 
     if (!user) {
         console.log('Loading')
-        return <>Loading</>
+        return (
+            <Boxx sx={{ display: 'flex', alignItems: 'center',
+        justifyContent: 'center',
+        padding: '20rem 0' }}>
+        <CircularProgress />
+            </Boxx>
+        )
     }
     return (
         <Container maxWidth="xl">
