@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Comments from "../Comments/Comments";
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
 import moment from "moment";
 import DOMPurify from 'dompurify';
 import PropTypes from "prop-types";
@@ -91,9 +93,11 @@ export default function View({ isSignedIn }) {
 
     if (!post) {
         return (
-            <>
-                Loading
-            </>
+            <Box sx={{ display: 'flex', alignItems: 'center',
+        justifyContent: 'center',
+        padding: '20rem 0' }}>
+        <CircularProgress />
+            </Box>
         )
     }
     const formattedDate = moment(post.created_at).format("D MMM, YYYY");
