@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.dark-mode .css-1107rdm-MuiButtonBase-root-MuiButton-root a {
+
+    color: white;
+}
+
+body.dark-mode .welcome-title {
+    color: white;
+}
+
+body.dark-mode .welcome-description {
+    color: white;
+}
+
+body.dark-mode .css-1flwgu1-MuiAvatar-root {
+    color: white;
+}
+
+body.dark-mode .card-content {
+    background-color: #333434
+}
+
+body.dark-mode .card-title div {
+    color: white;
+}
+
+body.dark-mode .card-title p {
+    color: #b1b6c2;
+}
+
+body.dark-mode .author-details a {
+    color: white;
+}
+
+body.dark-mode .meta {
+    color: #dbe1ed;
+}
+
+body.dark-mode .css-1xrrpwr-MuiTypography-root a {
+    color: black;
+}
+
+
+
+body.dark-mode {
+    color: white;
+}
+
+body.dark-mode {
+    background-color: #242222;
+}
+
+
+body.dark-mode .blog-content {
+    background-color: #2B2C2B;
+}
+
+body.dark-mode .blog-title{
+    color: white;
+} 
+
+body.dark-mode .blog-meta{
+    color: #ededed
+}
+
+body.dark-mode .blog-content p{
+    color: white;
+}
+
+body.dark-mode .blog-content h1,
+body.dark-mode .blog-content h2,
+body.dark-mode .blog-content h3,
+body.dark-mode .blog-content h4,
+body.dark-mode .blog-content h5,
+body.dark-mode .blog-content h6 {
+    color: white;
+}
+
+body.dark-mode .blog-content li{
+    color: white;
+}
+
+body.dark-mode .blog-content pre{
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode .comments-section{
+    background-color: #2B2C2B;
+}
+
+body.dark-mode .comment-author{
+    color: white;
+}
+
+body.dark-mode .comment-date{
+    color: white;
+}
+
+body.dark-mode .comment-body{
+    color: white;
+}
+
+body.dark-mode .no-comments{
+    background-color: #242222;
+}
+
+body.dark-mode .comment-box{
+    background-color: #2B2C2B;
+    color: white;
+    border-color: #2B2C2B;
+}
+
+body.dark-mode .css-1d63wei-MuiPaper-root-MuiAppBar-root{
+    background-color: #3b3838;
+}
+
+body.dark-mode .css-19nl4de-JoyCard-root{
+    background-color: #2B2C2B;
+    border-color: #474545;
+}
+
+body.dark-mode .css-19nl4de-JoyCard-root p{
+    color: white;
+}
+body.dark-mode .css-19nl4de-JoyCard-root span{
+    color: white;
+    
+}
+
+body.dark-mode .css-1oxvd71-JoySheet-root {
+    background-color: #484b4e;
+}
+
+
+body.dark-mode .css-gmh7jj-MuiTableBody-root{
+    background-color: #1d262e;
+}
+
+body.dark-mode .css-1j3gxal-MuiTableCell-root.MuiTableCell-body{
+    color: white;
+}

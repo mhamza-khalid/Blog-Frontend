@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.blog-container {
+    font-family: "Montserrat", serif;
+    max-width: 1000px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.blog-meta {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+.blog-meta span {
+    margin-right: 10px;
+}
+
+.blog-body {
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+
+.comments-header {
+    font-family: "Montserrat", serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.like-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-body a {
+    color: black;
+}
+
+ul,
+ol {
+    margin-left: 2rem;
+}
+
+p {
+    margin: 1rem 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 1rem 0;
+}
+
+pre {
+    background-color: #f4f4f4;
+    /* Light gray background */
+    color: #333;
+    /* Darker text for contrast */
+    font-family: 'Courier New', Courier, monospace;
+    /* Monospace font */
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 6px;
+    /* Slightly rounded corners */
+    overflow: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Softer shadow */
+    white-space: pre-wrap;
+    /* Wrap long lines */
+    border-left: 4px solid #6c757d;
+    /* A subtle left border for style */
+}
+
+pre code {
+    display: block;
+    overflow-x: auto;
+    white-space: pre;
+    padding: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    /* Lighter scrollbar */
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #999;
+    /* Slightly darker on hover */
+}
